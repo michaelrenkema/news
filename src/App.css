@@ -4,3 +4,40 @@
   padding: 2rem;
   text-align: left;
 }
+
+body {
+  background-color: #292a2d !important;
+  color: #fff !important;
+}
+
+.MuiCard-root {
+  background-color: #202124 !important;
+  color: #c4c7c5 !important;
+  padding: 0.5em 1em !important;
+}
+
+.MuiContainer-root img {
+  margin-top: 0.75em;
+  margin-left: 0.75em;
+}
+
+.related {
+  padding-left: 2em;
+}
+
+.title {
+  font-size: 1.25rem;
+}
+
+.related .title {
+  font-size: 1rem;
+}
+
+.details {
+  font-size: 0.75rem;
+}
+
+.feed {
+  display: flex;
+  align-items: center;
+}
