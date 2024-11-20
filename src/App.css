@@ -10,6 +10,26 @@ body {
   color: #fff !important;
 }
 
+input {
+  font-size: 1.2em;
+  height: 48px;
+  width: 400px;
+  padding: 16px;
+  background-color: #3c4043;
+  color: #fff;
+  border-width: 0 1px;
+  border-color: transparent;
+  border-radius: 10px;
+  outline: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 36px;
+}
+
 .MuiCard-root {
   background-color: #202124 !important;
   color: #c4c7c5 !important;

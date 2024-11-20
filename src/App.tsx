@@ -6,7 +6,10 @@ import { feed, storyVM } from './types';
 import Spotlights from './components/Spotlights';
 
 function App() {
-  // for demo purposes, define data here
+  // for demo purposes, define data here.
+  // ideally, the top stories and spotlight sections would have their feed data pre-prepared on server-side to avoid having the logic below.
+  // the client-side would then only have to subscribe to the feed and update state as new items arrive, filtering out older items.
+  // the React components can then update when state changes with a useEffect.
 
   const feeds = [
     {
@@ -210,10 +213,10 @@ function App() {
     <>
       <Header />
       <Grid container spacing={2}>
-        <Grid size={{ xs: 6, md: 8 }}>
+        <Grid size={{ md: 6, lg: 8 }} sx={{minWidth: '280px'}}>
           <Stories stories={topStories} />
         </Grid>
-        <Grid size={{ xs: 6, md: 4 }}>
+        <Grid size={{ md: 6, lg: 4 }}>
           <Spotlights stories={spotlights} />
         </Grid>
       </Grid>

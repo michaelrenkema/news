@@ -11,7 +11,7 @@ type Props = {
 function Spotlights({ stories }: Props) {
   return (
     <Card>
-      <h2>Local news</h2>
+      <h2><a href="https://news.google.com/topics/CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE?hl=en-NZ&gl=NZ&ceid=NZ%3Aen">Local news &gt;</a></h2>
       <Stack spacing={2}>
         {
           stories.map(({ story, feed }) => {
